@@ -1,0 +1,79 @@
+
+.success{
+    background-color: hsl(234, 29%, 20%);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirm{
+    height: 49%;
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 45px;
+    border-radius: 24px;
+    color:hsl(234, 29%, 20%);
+}
+#thanks{
+    font-weight:700;
+}
+#confirm-words{
+    font-weight: 400;
+}
+.mail{
+    font-weight: 700;
+}
+#dismissButton{
+    width: 103.4%;
+    height: 8vh;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 16px;
+    background-color:hsl(234, 29%, 20%);
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 0.4s ease-out;
+}
+.check{
+    position: relative;
+    right: 16px;
+}
+#dismissButton:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    
+}
+
+@media (max-width : 850px){
+    .success{
+        background-color: #fff;
+        overflow-y: hidden;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+    }
+    .confirm{
+        height: 100dvh;
+        width: fit-content;
+        box-shadow: 0 0;
+        position: relative;
+    }
+    .words-conf{
+        width: fit-content;
+        position: relative;
+        top: 50px;   
+    }
+    .words-conf p{
+        line-height: 1.3em;
+    }
+    #dismissButton{
+        position: absolute;
+        bottom: 100px;
+        width:300px;
+    }
+    
+}

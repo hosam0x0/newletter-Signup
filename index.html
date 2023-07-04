@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/confirm.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sub-container">
+      <div class="image">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+      <div class="starting">
+        <div class="terms">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li><span>Product dicovery and building what matters</span></li>
+            <li><span>Measuring to ensure updates are a success</span></li>
+            <li><span>And much more!</span></li>
+          </ul>
+        </div>
+        <form name="form1" id="signupForm">
+          <div class="mailStatus">
+            <label for="email">Email address</label> <span class="email__error hidden">Invalid Email!</span>
+          </div>
+          <input class="input" type="text" name="email" id="email" placeholder="email@company.com" required  ><br>
+          <button class="btn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+  <!--Success Message-->
+
+  <div class="success hidden">
+    <div class="confirm" >
+        <div class="words-conf">
+            <div class="check"><img src="/assets/images/icon-success.svg" alt="success"></div>
+            <h1 id="thanks">Thanks for subscribtion!</h1>
+            <p id="confirm-words">A confirmation email has been sent to
+                <strong id="successMail"></strong>. Please open it And
+                click the button inside to confirm your subscribtion.
+            </p>
+        </div>
+        <button type="button" id="dismissButton">Dismiss message</button>
+    </div>
+</div>
+</body>
+<script src="/js/scripts.js"></script>
+</html>
