@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/hosam0x0/newletter-Signup.git
-- Live Site URL: 
+- Live Site URL: https://newletter-signup-sand.vercel.app/
 
 ## My process
 
